@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Game Select Number</h1>
+<input type="button" value="start" width="100" onclick="play()">
+<script>
+    function play() {
+        let Min = parseInt(prompt(' Enter Min'))
+        let Max = parseInt(prompt(' Enter Max'))
+        let Number = parseInt(Math.random() * (Max - Min) + Min)
+        let count = 0;
+        while (count < 3) {
+            let selection = parseInt(prompt("Enter Select"))
+            if (selection === Number) {
+                alert('congratulations')
+                break
+            } else {
+                count++
+                if (count === 3){
+                    alert('you lost')
+            } else {
+                    alert('select again')}
+            }
+            }
+        }
+</script>
+</body>
+</html>

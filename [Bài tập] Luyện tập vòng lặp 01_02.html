@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietDo= parseFloat(prompt('Nhap nhiet do'))
+    while (nhietDo < 20 || nhietDo >100) {
+        if (nhietDo <20) {
+            alert('Nhiet do qua lanh can tang nhiet do')
+            nhietDo = parseFloat(prompt('Nhap nhiet do'))
+        } else {
+            alert('Nhiet do qua nong can giam nhiet do')
+            nhietDo = parseFloat(prompt('Nhap nhiet do'))
+        }
+    }
+    alert('nhiet do binh thuong')
+
+</script>
+</body>
+</html>
