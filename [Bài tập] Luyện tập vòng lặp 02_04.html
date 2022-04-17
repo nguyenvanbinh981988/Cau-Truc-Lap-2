@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhap chieu cao'))
+    let b = parseInt(prompt('nhap chieu rong'))
+    for (let i = 1; i <= a; i++) {
+        let str = '*';
+        if (i == 1 || i == a) {
+            for (let j = 2; j < b; j++) {
+                str += '*'
+            }
+            document.write(str + '*<br>')
+        } else {
+            for (let k = 2; k < b; k++) {
+                str += '&nbsp&nbsp'
+            }
+            document.write(str + '*<br>')
+        }
+    }
+</script>
+
+</body>
+</html>

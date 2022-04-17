@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let tienVay= parseFloat(prompt("Nhap tien vay",))
+  let soThang= parseFloat(prompt("Nhap so thang",))
+  let laiSuat= parseFloat(prompt("Nhap lai suat",))
+  let tienTra = tienVay;
+  for (let i=0; i<soThang;i++){
+    tienTra += laiSuat*tienTra
+  }
+  alert('Tong so tien phai tra: ' + tienTra)
+</script>
+</body>
+</html>

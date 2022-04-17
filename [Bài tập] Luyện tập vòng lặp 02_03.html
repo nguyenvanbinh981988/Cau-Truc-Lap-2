@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhap canh hình 1'))
+    let str1 = ''
+    for(let i = 0; i < a;i++){
+            str1 += '*'
+        document.write(str1 + '<br>')
+    }
+
+    document.write("<br> <br> <br>")
+
+
+    let b = parseInt(prompt('nhap canh hình 2'))
+    for(let j = 1; j <= b;j++) {
+        let str2 = ''
+        for (let g = 1; g <= b; g++) {
+            str2 += '*'
+        }
+        document.write(str2 + '<br>')
+        b--
+        j--
+    }
+
+    document.write("<br> <br> <br>")
+
+
+    let c = parseInt(prompt('nhap canh hình 3'))
+    for(let h = 1; h <= c;h++) {
+        let str3 = ''
+        for (let k = 1; k <= (c-h); k++) {
+            str3 += '&nbsp&nbsp'
+                }
+        for (let n = 1; n <= h; n++) {
+            str3 += '*'
+        }
+        document.write(str3+'<br>' )
+    }
+
+    document.write("<br> <br> <br>")
+
+
+    let d = parseInt(prompt('nhap canh hình 3'))
+    for(let m = 1; m <= d;m++) {
+        let str4 = ''
+        for (let l = 1; l <= (d-m+1); l++) {
+            str4 += '*'
+        }
+        for (let r = 1; r < m; r++) {
+            str4 += '&nbsp'
+        }
+        document.write(str4+'<br>' )
+    }
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Enter N'))
+    let i = 0;
+    let a = 1
+    document.write('Day fibonacci duoc gioi han toi' + n + ' dãy là: <br>' )
+    while(a <= n){
+        let TG = i
+        i = a
+        a = i + TG
+        document.write( TG + '<br>')
+    }
+    document.write( i + '<br>')
+    document.write( TG + '<br>')
+</script>
+</body>
+</html>
