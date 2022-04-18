@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhap ba canh tam giac </p>
+<input id="canhA" type="Numper" value=""> <br>
+<input id="canhB" type="Numper" value=""> <br>
+<input id="canhC" type="Numper" value=""> <br>
+
+<button typeof="button" onclick="Tinh()">Tinh</button>
+
+<script>
+    function Tinh() {
+        let a = parseFloat(document.getElementById('canhA').value)
+        let b = parseFloat(document.getElementById('canhB').value)
+        let c = parseFloat(document.getElementById('canhC').value)
+        let A = a**2 + b**2 - c**2
+        let B = a**2 + c**2 - b**2
+        let C = c**2 + b**2 - a**2
+        if (a+b > c && a + c > b && b + c > a) {
+             if (a == b && b == c) {
+                document.write('Day la 3 canh cua tam giac deu')
+        } else if (a == b || a == c || b == c) {
+                 document.write('Day la 3 canh cua tam giac can')
+             } else if ( A  ==  0 || B == 0 ||  C == 0){
+                 document.write('Day la 3 canh cua tam giac vuong')
+             } else {
+                 document.write('Day la 3 canh cua tam giac thuong')
+             }
+    } else {
+            document.write('Day khong phai la 3 canh cua tam giac')
+
+        }
+}
+
+</script>
+</body>
+</html>

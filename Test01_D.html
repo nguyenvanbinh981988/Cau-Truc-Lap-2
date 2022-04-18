@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhap vao so nam</p>
+<input id="nam" type="Numper" value="">
+<button typeof="button" onclick="Tinh()">Tinh</button>
+
+<script>
+    function Tinh() {
+        let a = parseFloat(document.getElementById('nam').value)
+        let theKy = parseInt(a / 100 + 1)
+        document.write('Nam nay thuoc the ky: ' + theKy)
+    }
+</script>
+</body>
+</html>

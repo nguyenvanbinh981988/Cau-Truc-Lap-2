@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhap hai so a,b</p>
+<input id="soa" type="Numper" value=""> <br>
+<input id="sob" type="Numper" value="">
+<button typeof="button" onclick="Tinh()">Tinh</button>
+
+<script>
+    function Tinh() {
+        let a = parseFloat(document.getElementById('soa').value)
+        let b = parseFloat(document.getElementById('sob').value)
+        let A = a**2
+        let B = b**2
+        document.write('a**2= ' + A + '<br>')
+        document.write('b**2= ' + B)
+    }
+</script>
+</body>
+</html>

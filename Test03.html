@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let a = parseInt(prompt('Nhap vao so a'));
+    let check = true
+    if (a === 2) {
+        alert(a + ' la so nguyen to')
+    } else {
+        for (let i = 3; i <= (a / 2); i++) {
+            if (a % i == 0) {
+                check = false
+                break
+            }
+               }
+        if(check == true) {
+            alert(a + ' la so nguyen to')
+        } else {
+            alert(a + ' khong la so nguyen to')
+        }
+        }
+</script>
+</body>
+</html>

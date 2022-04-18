@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhap canh hinh vuong</p>
+<input id="Vuong" type="Numper" value="">
+<button typeof="button" onclick="Tinh()">Tinh</button>
+
+<script>
+    function Tinh() {
+        let a = parseFloat(document.getElementById('Vuong').value)
+        let chuVi = 4 * a
+        let dienTich = a * a
+        document.write('Chu vi hinh vuong la: ' + chuVi + '<br>')
+        document.write('Dien tich hinh vuong la: ' + dienTich)
+
+    }
+</script>
+</body>
+</html>
