@@ -9,7 +9,7 @@
     let a = parseInt(prompt('nhap canh hình 1'))
     let str1 = ''
     for(let i = 0; i < a;i++){
-            str1 += '*'
+        str1 += '*'
         document.write(str1 + '<br>')
     }
 
@@ -35,7 +35,7 @@
         let str3 = ''
         for (let k = 1; k <= (c-h); k++) {
             str3 += '&nbsp&nbsp'
-                }
+        }
         for (let n = 1; n <= h; n++) {
             str3 += '*'
         }
@@ -45,19 +45,23 @@
     document.write("<br> <br> <br>")
 
 
-    let d = parseInt(prompt('nhap canh hình 3'))
+    let d = parseInt(prompt('nhap canh hình 4'))
     for(let m = 1; m <= d;m++) {
         let str4 = ''
-        for (let l = 1; l <= (d-m+1); l++) {
-            str4 += '*'
-        }
-        for (let r = 1; r < m; r++) {
-            str4 += '&nbsp'
+        if (m==1){
+            for (let l = 1; l <= d; l++) {
+                str4 += '*'
+            }
+        } else {
+            for (let r = 1; r <=(m-1); r++) {
+                str4 += '&nbsp&nbsp'
+            }
+            for (let s = 1; s <= (d -m+1); s++) {
+                str4 += '*'
+            }
         }
         document.write(str4+'<br>' )
     }
-
-
 
 </script>
 
